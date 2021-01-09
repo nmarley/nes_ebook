@@ -21,7 +21,7 @@ Visual data is packed in so-called tiles: an 8 x 8 pixel image that could use up
 
 What makes the CHR format tricky is that tiles themselves don't hold any color information. Each pixel in a tile is codified using 2 bits, declaring a color index in a palette, not a color itself.
 
-> If NES were using popular RGB format for each pixel, a single tile would occupy 8*8*24 = 192 bytes. And it would require 96 KiB of CHR ROM space to hold 512 tiles.
+> If NES were using popular RGB format for each pixel, a single tile would occupy 8 \* 24 = 192 bytes. And it would require 96 KiB of CHR ROM space to hold 512 tiles.
 
 The real color of a pixel is decided during the rendering phase by using the so-called color palette, more on this later.
 
